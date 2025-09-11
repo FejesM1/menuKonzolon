@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace menuKonzolon
 {
@@ -13,7 +14,7 @@ namespace menuKonzolon
         {
             string nev = "";
             bool ffi = true;
-            string szulEV; 
+            int szulEV = 0; 
             string valasz = "";
             do
             {
@@ -28,22 +29,34 @@ namespace menuKonzolon
                 //if-fel szépen végigmehetnénk
                 if (valasz == "6")
                 {
-                    Console.WriteLine("SIkeresen rögzítettük az adatokat. Enterre tovább...");
+                    Console.Write("Kérem, adja meg a nevet: ");
+                    nev = Console.ReadLine();
+                    Console.Write("Neme (f/n): ");
+                    ffi = Console.ReadLine() == "f";
+                    Console.Write("Kérem, adja meg a születési évét: ");
+                    szulEV = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Sikeresen rögzítettük az adatokat. Enterre tovább...");
                     Console.ReadLine();
                 }
                 else if (valasz == "7")
                 {
+                    Console.WriteLine($"Név: {nev}\n" +
+                        $"Neme: {ffi}\n" +
+                        $"Születési év: {szulEV}\n");
+                    Console.WriteLine("Enterre tovább...");
+                    Console.ReadLine();
 
                 }
                 else if (valasz == "67")
                 {
-
+                    Console.WriteLine("Biztosan ki akar lépni (i/n)?: ");
+                    valasz = Console.ReadLine() != "i" ? " " : "67"; 
                 }
                 else
                 {
                     Console.WriteLine("Nem létező menüpontm, kérem válasszon másikat");
                 }
-            } while (valasz != "3");
+            } while (valasz != "67");
         }
     }
 }
