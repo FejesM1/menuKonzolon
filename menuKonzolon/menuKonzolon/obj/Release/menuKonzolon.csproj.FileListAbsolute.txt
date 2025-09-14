@@ -1,0 +1,8 @@
+C:\Users\matef\Source\Repos\menuKonzolon\menuKonzolon\bin\Release\menuKonzolon.exe.config
+C:\Users\matef\Source\Repos\menuKonzolon\menuKonzolon\bin\Release\menuKonzolon.exe
+C:\Users\matef\Source\Repos\menuKonzolon\menuKonzolon\bin\Release\menuKonzolon.pdb
+C:\Users\matef\Source\Repos\menuKonzolon\menuKonzolon\obj\Release\menuKonzolon.csproj.AssemblyReference.cache
+C:\Users\matef\Source\Repos\menuKonzolon\menuKonzolon\obj\Release\menuKonzolon.csproj.CoreCompileInputs.cache
+C:\Users\matef\Source\Repos\menuKonzolon\menuKonzolon\obj\Release\menuKonzolon.exe
+C:\Users\matef\Source\Repos\menuKonzolon\menuKonzolon\obj\Release\menuKonzolon.pdb
+C:\Users\matef\Source\Repos\menuKonzolon\menuKonzolon\obj\Release\menuKonzolon.exe.config
